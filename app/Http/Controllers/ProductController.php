@@ -15,4 +15,17 @@ class ProductController extends Controller
     	$data = Product::all();
     	return $data;
     }
+<<<<<<< HEAD
+=======
+    public function insert(Request $request)
+    {
+    	// print_r($request->input'id'));
+    	$product = new Product;
+    	$product->id = $request->input('id');
+    	$product->Name = $request->input('Name');
+    	$product->descrition = $request->input('descrition');
+    	$product->price = $request->input('price');
+    	$product->save(); 
+    }
+>>>>>>> develop
 }

@@ -17,4 +17,9 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 Route::apiresource('users','userController');
+<<<<<<< HEAD
 Route::get('products','ProductController@list'); 
+=======
+Route::get('products','ProductController@list'); 
+Route::post('products','ProductController@insert'); 
+>>>>>>> develop
